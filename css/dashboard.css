@@ -1,0 +1,180 @@
+body{
+    height: auto;
+}
+.container-fluid{
+    --bs-gutter-x: 0;
+}
+.p-20{
+    padding: 20px;
+}
+.overflow-wraper .col-lg-2 {
+    width: 20.666667%; 
+}
+.overflow-wraper .col-lg-10{
+    width: 79.333333%;
+}
+.sidebar {
+    padding: 15px;
+    height: calc(100vh - 32px);
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.topbar {
+    background: #fff;
+    margin-bottom: 16px;
+    height: 80px;
+    border-radius: 24px;
+}
+.advert{
+    height: 150px;
+}
+.dashboad-card {
+    border-radius: 14px;
+    background: linear-gradient(100.75deg, #19D4DD -65.48%, rgba(255, 255, 255, 0.65) 93.73%);
+    border: 1px solid #BFE8E9;
+    box-shadow: 0px 2.33528px 17.5146px rgba(26, 118, 120, 0.2);
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 195px;
+    position: relative;
+}
+.dashboad-card .header-das .icon{
+    background-color: var(--primary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.dashboad-card .bottom-content{
+    background: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #B6E5E6;
+    box-shadow: inset 0px 4px 34px rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+.dashboad-card .header-das{
+    justify-content: flex-start !important;
+}
+.gutter-2{
+ --bs-gutter-x: 12px;   
+}
+.dashboad-card .content{
+    padding: 12px;
+}
+.dashboad-card .header-das h2 {
+    color: var(--secondary);
+    font-size: 26px;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+.dashboad-card .header-das, .flex-content {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 12px;
+    align-items: center;
+}
+.info-content p{
+    margin-bottom: 0px;
+}
+.info-content {
+    padding-top: 10px;
+}
+.info-content span{
+    color: rgba(0, 46, 101, 0.6);
+    font-size: 15px;  
+}
+.info-content  p{
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 15px;  
+    line-height: 1.5;
+}
+.bottom-content a{
+    color: var(--secondary);
+    font-size: 18px;
+    text-decoration: none;  
+}
+.bottom-content a:hover{
+    text-decoration: underline;
+}
+.info-content>div{
+    border-right:1px solid rgba(109, 131, 132, 0.2);
+    padding-right: 18px;
+}
+.info-content>div:last-child{
+    border-right:0px;
+    padding-right: 0px;
+}
+.logo-gallery{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 15px;   
+}
+.dashboard-banner {
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tooltip {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: red;
+    border: 1px solid #B6E5E6;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(146, 171, 205, 0.2);
+    font-family: var(--font-slate);
+}
+
+@media (min-width: 1900px) {
+    .dashboad-card{
+        height: auto;
+    }
+    .dashboad-card .bottom-content{
+        position: relative;
+    }
+}
+@media (max-width: 1599px) {
+    .sidebar .nav-link{
+        padding: 4px 5px;
+    }
+    .dashboad-card{
+        height: 175px;
+        position: relative;
+    }
+    .dashboad-card .bottom-content{
+        position:absolute;
+        width: 100%;
+        bottom: 0px;
+    }
+    .info-content p, .info-content span {
+        font-size: 12px;
+    }
+    .bottom-content a{
+        font-size: 14px;
+    }
+    .dashboad-card .header-das h2{
+        font-size: 20px;
+    }
+    .dashboad-card .header-das .icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 991px){
+    .logo-gallery {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    
+}
